@@ -1,0 +1,10 @@
+package ws3part2;
+
+
+class pattern {
+
+    static Object matcher(String serialNumber) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+    
+}
