@@ -1,0 +1,23 @@
+package ws3part2;
+import java.util.List;
+import java.util.ArrayList;
+
+public class Management {
+    private List<guitars> guitar;
+    
+    public Management(){
+        this.guitar = new ArrayList<>();
+    }
+    
+    public void addGuitar(guitars guiltar){
+        this.guitar.add(guiltar);
+    }
+    
+    public void searchByserial(String serial){
+        this.guitar.stream().filter(dan -> dan.getSerialNumber()
+        .contains(serial)).forEach(dan -> dan.Show());
+    }
+    
+    
+    
+}
